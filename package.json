@@ -1,5 +1,5 @@
 {
-  "name": "cowsay",
+  "name": "cowsaydex",
   "version": "1.4.0",
   "description": "cowsay is a configurable talking cow",
   "keywords": [
@@ -11,18 +11,14 @@
     "ASCII"
   ],
   "homepage": "https://github.com/piuccio/cowsay",
-  "author": {
-    "name": "Fabio Crisci",
-    "email": "piuccio@gmail.com",
-    "url": "https://github.com/piuccio/"
-  },
+  "author": "Fabio Crisci <piuccio@gmail.com> (https://github.com/piuccio/)",
   "license": "MIT",
   "main": "./index",
   "module": "./build/cowsay.es.js",
   "browser": "./build/cowsay.umd.js",
   "bin": {
-    "cowsay": "./cli.js",
-    "cowthink": "./cli.js"
+    "cowsay": "cli.js",
+    "cowthink": "cli.js"
   },
   "files": [
     "index.js",
@@ -33,13 +29,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/piuccio/cowsay.git"
+    "url": "git+https://github.com/piuccio/cowsay.git"
   },
   "scripts": {
     "prepublish": "rollup -c",
     "test": "node test.js"
   },
   "dependencies": {
+    "cowsay": "^1.4.0",
     "get-stdin": "^5.0.1",
     "optimist": "~0.6.1",
     "string-width": "~2.1.1",
@@ -55,5 +52,12 @@
   "preferGlobal": true,
   "engines": {
     "node": ">= 4"
+  },
+  "bugs": {
+    "url": "https://github.com/piuccio/cowsay/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
